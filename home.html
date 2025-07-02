@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- meta name="viewport" content="width=device-width, initial-scale=1.0"--> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>BabySeeking | Seek Your Dream Baby</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+    <!-- 导航栏 - 添加语言切换器 -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/logo1.jpg">
+            <span data-i18n="brandName">SeekingBaby</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" data-i18n="nav.home">Home</a>
+            <a href="#" data-i18n="nav.about">About Us</a>
+            <a href="#" data-i18n="nav.resources">Resources</a>
+            <a href="#" data-i18n="nav.stories">Success Stories</a>
+            <a href="#" data-i18n="nav.contact">Contact</a>
+            
+            <!-- 语言切换按钮 -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <span class="lang-separator">|</span>
+                <button class="lang-btn" data-lang="zh">中文</button>
+            </div>
+            
+            <button class="btn login-btn" data-i18n="nav.login">Login</button>
+            <button class="btn primary-btn" data-i18n="nav.signup">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 - 完全保留原内容 -->
+    <section class="hero">
+      <div class="hero-content">
+
+	<div style="float:left; height: 100%; padding-bottom: 0px;">
+	  <img src="assets/images/baby1.jpg" height=200>
+	</div>
+	
+	<div style="margin-left: 80px; float:left">
+	  <h1 data-i18n="hero.title">Begin Your Baby Seeking Journey</h1>
+          <p data-i18n="hero.subtitle">Whether you choose adoption, surrogacy or IVF, we're here to support and guide you</p>
+          <div class="cta-buttons">
+            <button class="btn primary-btn" data-i18n="hero.cta1">Free Consultation</button>
+            <button class="btn secondary-btn" data-i18n="hero.cta2">Learn More</button>
+          </div>
+	</div>
+	
+      </div>
+    </section>
+
+    <!-- 服务选择卡片 - 完全保留原内容 -->
+    <section class="services">
+        <div class="container">
+            <h2 data-i18n="services.title">Choose Your Path to Parenthood</h2>
+            <div class="service-card">
+
+	      <div class="left">
+
+                <!-- 约会卡片 -->
+                <div class="card">
+                  <div class="card-icon">
+		    <i class="fa-solid fa-people-arrows"></i>
+                  </div>
+                  <h3 data-i18n="services.dating.title">Dating</h3>
+                    <p data-i18n="services.dating.description">Find your dream soulmate</p>
+                    <button class="btn card-btn" data-i18n="services.learnMore">Learn More</button>
+                </div>
+
+		
+                <!-- 领养卡片 -->
+                <div class="card">
+                    <div class="card-icon">
+                      <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 data-i18n="services.adoption.title">Adoption</h3>
+                    <p data-i18n="services.adoption.description">Provide a forever home to a child in need</p>
+                    <button class="btn card-btn" data-i18n="services.learnMore">Learn More</button>
+                </div>
+                
+                <!-- 代孕卡片 -->
+                <div class="card">
+                    <div class="card-icon">
+                      <i class="fas fa-baby-carriage"></i>
+                    </div>
+                    <h3 data-i18n="services.surrogacy.title">Surrogacy</h3>
+                    <p data-i18n="services.surrogacy.description">Realize your dream of parenthood through a surrogate</p>
+                    <button class="btn card-btn" data-i18n="services.learnMore">Learn More</button>
+                  </div>
+		</div>
+
+		<div class="right">
+                  <!-- 试管婴儿卡片 -->
+                  <div class="card">
+                    <div class="card-icon">
+                      <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 data-i18n="services.ivf.title">IVF</h3>
+                    <p data-i18n="services.ivf.description">Advanced assisted reproductive technology solutions</p>
+                    <button class="btn card-btn" data-i18n="services.learnMore">Learn More</button>
+                  </div>
+                
+                  <!-- 捐赠计划卡片 -->
+                  <div class="card">
+                    <div class="card-icon">
+                      <i class="fas fa-dna"></i>
+                    </div>
+                    <h3 data-i18n="services.donation.title">Donation Programs</h3>
+                    <p data-i18n="services.donation.description">Egg, sperm or embryo donation options</p>
+                    <button class="btn card-btn" data-i18n="services.learnMore">Learn More</button>
+                  </div>
+
+		  <!-- 冻卵卡片 -->
+                <div class="card">
+                    <div class="card-icon">
+                      <i class="fa-solid fa-person-dress"></i>
+                    </div>
+                    <h3 data-i18n="services.eggfreezing.title">Egg Freezing</h3>
+                    <p data-i18n="services.eggfreezing.description">Use younger, healthier eggs in the future</p>
+                    <button class="btn card-btn" data-i18n="services.learnMore">Learn More</button>
+                </div>
+
+		</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 快速注册/登录区域 - 完全保留原内容 -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <h2 data-i18n="auth.title">Join Our Community</h2>
+                <p data-i18n="auth.subtitle">Register to access more resources, expert consultations and community support</p>
+                
+                <div class="social-login">
+                    <button class="social-btn google">
+                        <i class="fab fa-google"></i> <span data-i18n="auth.social.google">Continue with Google</span>
+                    </button>
+                    <button class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i> <span data-i18n="auth.social.facebook">Continue with Facebook</span>
+                    </button>
+                    <button class="social-btn wechat">
+                        <i class="fab fa-weixin"></i> <span data-i18n="auth.social.wechat">Continue with WeChat</span>
+                    </button>
+                </div>
+                
+                <div class="divider">
+                    <span data-i18n="auth.divider">or</span>
+                </div>
+                
+                <form class="signup-form">
+                    <input type="email" placeholder="Email" data-i18n-ph="auth.emailPlaceholder">
+                    <input type="password" placeholder="Password" data-i18n-ph="auth.passwordPlaceholder">
+                    <button type="submit" class="btn primary-btn" data-i18n="auth.signup">Sign Up</button>
+                </form>
+                
+                <p class="login-link" data-i18n="auth.login">Already have an account? <a href="#">Login</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社区聊天入口 - 完全保留原内容 -->
+    <section class="community">
+        <div class="container">
+            <div class="community-content">
+                <h2 data-i18n="community.title">Join Our Support Community</h2>
+                <p data-i18n="community.subtitle">Connect with other families on similar journeys, share experiences and get support</p>
+                <button class="btn chat-btn">
+                    <i class="fas fa-comments"></i> <span data-i18n="community.cta">Enter Community Chat</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 其他功能建议 - 完全保留原内容 -->
+    <section class="features">
+        <div class="container">
+            <h2 data-i18n="features.title">More Services We Offer</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fas fa-user-md"></i>
+                    <h3 data-i18n="features.consultations.title">Expert Consultations</h3>
+                    <p data-i18n="features.consultations.description">Schedule with fertility specialists, lawyers and counselors</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-book"></i>
+                    <h3 data-i18n="features.resources.title">Educational Resources</h3>
+                    <p data-i18n="features.resources.description">Comprehensive guides, articles and FAQs</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3 data-i18n="features.planning.title">Journey Planning</h3>
+                    <p data-i18n="features.planning.description">Personalized family building roadmap</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3 data-i18n="features.finance.title">Financial Support</h3>
+                    <p data-i18n="features.finance.description">Funding programs and cost calculators</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 - 完全保留原内容 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer.about.title">About FamilyBuilder</h4>
+                    <p data-i18n="footer.about.description">Helping families grow since 2010 with compassionate care and professional services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.link1">Adoption Process</a></li>
+                        <li><a href="#" data-i18n="footer.link2">Surrogacy Programs</a></li>
+                        <li><a href="#" data-i18n="footer.link3">IVF Treatments</a></li>
+                        <li><a href="#" data-i18n="footer.link4">Cost Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact">Contact Us</h4>
+                    <p data-i18n="footer.address">500 El Camino Real,<br>Santa Clara, CA 95050</p>
+                    <p data-i18n="footer.email">Email: stacey.yuehui@gmail.com</p>
+                    <p data-i18n="footer.phone">Phone: (408) 813-9752</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2025 SeekingBaby. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/translation.js"></script>    
+    <script src="assets/js/i18n.js"></script>
+
+
+    <script>
+        // 增强版初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            // 初始化多语言系统
+            i18n.init();
+            
+            // 处理输入框的placeholder翻译
+            i18n.addObserver((lang) => {
+                document.querySelectorAll('[data-i18n-ph]').forEach(input => {
+                    const keys = input.getAttribute('data-i18n-ph').split('.');
+                    let translation = i18n.translations[lang];
+                    
+                    for (const key of keys) {
+                        translation = translation?.[key];
+                        if (!translation) break;
+                    }
+                    
+                    if (translation) {
+                        input.placeholder = translation;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
